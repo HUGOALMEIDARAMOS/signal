@@ -1,1 +1,30 @@
-<p>new-task works!</p>
+<div class="container-fluid ">
+  <div class="container ">
+    <div class="row mt-4 justify-content-md-center">
+      <div class="col-lg-6">
+        <div class="card bg-warning mt-4 border-0">
+          <h4 class="text-white p-3 pt-2 pb-2">To Do App</h4>
+        </div>
+
+        <div class="card shadow mt-4">
+          <div class="p-4">
+            <input type="text" class="form-control" placeholder="inserir task">
+          </div>
+          <div class="pt-1 pb-2 ps-4 pe-4">
+            <select class="form-select" aria-label="Default select example">
+              @for (item of taskArr; track taskArr) {
+                <option [value]="item.value">{{item.key}}</option>
+              }
+            </select>
+          </div>
+          <div class="pt-1 pb-2 ps-4 pe-4">
+            <button type="button" class="btn btn-primary w-100">Primary</button>
+          </div>
+        </div>
+
+        <h4 class="mt-4">Completed Tasks</h4>
+        <app-task-listagem></app-task-listagem>
+
+      </div>
+    </div>
+
