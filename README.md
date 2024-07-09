@@ -37,7 +37,7 @@ http://localhost:4200
 
 ### Screenshots
 
-![Imagem do meu projeto](src/assets/img1.png)
+![Imagem do meu projeto](src/assets/img1.png](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img1.png)
 
 ![Imagem do meu projeto](src/assets/img2.png)
 
