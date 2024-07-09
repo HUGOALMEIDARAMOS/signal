@@ -1,9 +1,12 @@
-export interface taskImp{
-  task: string,
+
+export interface Task{
+  id: number,
+  title: string,
   tipo: ResidenceTypeImp
+  isCompleted: boolean;
 }
 
 export enum ResidenceTypeImp {
-  Pessoal = 'pessoal',
-  Trabalho = 'trabalho',
+  Pessoal = 'Pessoal',
+  Profissional = 'Profissional',
 }

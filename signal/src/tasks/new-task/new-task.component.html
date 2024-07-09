@@ -3,28 +3,45 @@
     <div class="row mt-4 justify-content-md-center">
       <div class="col-lg-6">
         <div class="card bg-warning mt-4 border-0">
-          <h4 class="text-white p-3 pt-2 pb-2">To Do App</h4>
+          <h4 class="text-white p-3 pt-2 pb-2">Gerenciador de tarefas</h4>
         </div>
 
         <div class="card shadow mt-4">
           <div class="p-4">
-            <input type="text" class="form-control" placeholder="inserir task">
+            <input type="text" class="form-control" placeholder="digite a tarefa..." [formControl]="task">
           </div>
           <div class="pt-1 pb-2 ps-4 pe-4">
-            <select class="form-select" aria-label="Default select example">
-              @for (item of taskArr; track taskArr) {
-                <option [value]="item.value">{{item.key}}</option>
+            <select class="form-select" aria-label="Default select example" [formControl]="category">
+              @for (item of taskCategories; track item) {
+                <option [value]="item">{{item}}</option>
               }
             </select>
           </div>
           <div class="pt-1 pb-2 ps-4 pe-4">
-            <button type="button" class="btn btn-primary w-100">Primary</button>
+            <button type="button" class="btn btn-primary w-100" (click)="addTask()">Cadastrar</button>
           </div>
         </div>
-
-        <h4 class="mt-4">Completed Tasks</h4>
-        <app-task-listagem></app-task-listagem>
-
       </div>
     </div>
+    <div class=" row tarefas mt-5">
+      <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
+        @if(hasUncompletedTasks()){
+          <h4 class="mt-4">Tarefas em aberto</h4>
+          <app-task [lista]="uncompletedTasks()" (markTaskAsCompleted)="markTaskAsCompleted($event)" (removeTask)="removeTask($event)"></app-task>
+        }
+       </div>
+       <div class="col-xxl-6 col-xl-6 col-lg-6 col-sm-12">
+        @if(hasCompletedTasks()){
+        <h4 class="mt-4">Tarefas concluídas</h4>
+        <app-task-list-completed [lista]="completedTasks()" (removeTask)="removeTask($event)"></app-task-list-completed>
+        }
+       </div>
+    </div>
+
+
+  </div>
+
+
+
+</div>
 

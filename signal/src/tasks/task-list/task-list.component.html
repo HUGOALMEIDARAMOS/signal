@@ -1,5 +1,18 @@
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
+<div class="teste">
+      <ol class="list-group">
+        @for (item of lista(); track item.id) {
+          <li class="list-group-item d-flex justify-content-between ">
+            <div class="titulo">
+              <h5>{{ item.title }} <small> - {{item.tipo}}</small></h5>
+            </div>
+            <span class="">
+              <button type="button" class="btn btn-success" (click)="markTaskAsCompleted.emit(item)"><i class="bi bi-check-lg"></i></button>
+              <button type="button" class="btn btn-danger" (click)="removeTask.emit(item)"><i class="bi bi-x-lg"></i></button>
+            </span>
+          </li>
+        }
+      </ol>
 </div>
+
+
+

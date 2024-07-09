@@ -3,18 +3,13 @@ import { Task } from '../interface/task';
 
 
 @Component({
-  selector: 'app-task',
+  selector: 'app-task-list-completed',
   standalone: true,
   imports: [],
-  templateUrl: './task-list.component.html',
-  styleUrl: './task-list.component.scss'
+  templateUrl: './task-list-completed.component.html',
+  styleUrl: './task-list-completed.component.scss'
 })
-export class TaskListComponent {
-
+export class TaskListCompletedComponent {
   lista = input<Task[] | undefined>();
-  @Output() markTaskAsCompleted = new EventEmitter<Task>();
   @Output() removeTask = new EventEmitter<Task>();
-
-
-
 }
