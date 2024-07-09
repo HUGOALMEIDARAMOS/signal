@@ -1,6 +1,6 @@
 # Gerenciador de Tarefas
 
-Uma aplicação de gerenciamento de tarefas utilizando Angular 18, signals e Input e Bootstrap.
+Uma aplicação de gerenciamento de tarefas utilizando Angular 18, signals, @Input e Bootstrap.
 
 ### Índice
 - [Visão Geral do Projeto](#visão-geral-do-projeto)
