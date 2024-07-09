@@ -39,11 +39,11 @@ http://localhost:4200
 
 ![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img1.png)
 
-![Imagem do meu projeto](src/assets/img2.png)
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img2.png)
 
-![Imagem do meu projeto](src/assets/img3.png)
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img3.png)
 
-![Imagem do meu projeto](src/assets/img4.png)
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img4.png)
 
 
 
