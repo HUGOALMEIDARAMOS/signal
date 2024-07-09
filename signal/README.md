@@ -1,27 +1,53 @@
-# Signal
+# Gerenciador de Tarefas
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.0.1.
+Uma aplicação de gerenciamento de tarefas utilizando Angular 18, signals e Input e Bootstrap.
 
-## Development server
+### Índice
+- [Visão Geral do Projeto](#visão-geral-do-projeto)
+- [Tecnologias](#Tecnologias)
+- [Instalação e Configuração](#instalação-e-configuração)
+- [Uso](#uso)
+- [Screenshots](#screenshots)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
-## Code scaffolding
+### Visão Geral do Projeto
+Este projeto é um gerenciador de tarefas que permite criar, completar e excluir tarefas. O projeto utiliza Angular 18, Bootstrap para o design responsivo, signals para comunicação entre componentes e o Input do Angular para gerenciamento de dados.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Tecnologias
 
-## Build
+| Tecnologia | Documentação |
+| ------ | ------ |
+| Angular 18 | https://angular.dev |
+| Bootstrap | https://getbootstrap.com |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+### Instalação e Configuração
+***Clonar o Repositório***
+```bash
+git clone https://github.com/HUGOALMEIDARAMOS/signal.git
+cd gerenciador-de-tarefas
+```
+### Uso
+```bash
+npm install
+ng serve
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+http://localhost:4200
+```
 
-## Running end-to-end tests
+### Screenshots
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img1.png)
 
-## Further help
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img2.png)
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img3.png)
+
+![Imagem do meu projeto](https://github.com/HUGOALMEIDARAMOS/signal/blob/main/signal/src/assets/img4.png)
+
+
+
+## Screenshots
+
+![App Screenshot](https://via.placeholder.com/468x300?text=App+Screenshot+Here)
+
